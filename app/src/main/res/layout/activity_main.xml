@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/total_bg"
+    tools:context=".MainActivity"
+    android:background="@mipmap/bg">
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/main_vp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/buttonlayout"
+        >
+
+    </androidx.viewpager.widget.ViewPager>
+
+    <RelativeLayout
+        android:id="@+id/buttonlayout"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:layout_alignParentBottom="true">
+    <ImageView
+        android:id="@+id/main_iv_add"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:src="@mipmap/icon_add"/>
+    <ImageView
+        android:id="@+id/main_iv_more"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:src="@mipmap/icon_more"/>
+    <LinearLayout
+        android:id="@+id/main_layout_point"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerInParent="true">
+        <ImageView
+            android:id="@+id/ceshi"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/pointbg"
+            android:layout_centerInParent="true"
+
+            />
+    </LinearLayout>
+
+
+</RelativeLayout>
+</RelativeLayout>

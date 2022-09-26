@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp">
+    <TextView
+        android:id="@+id/item_day"
+        style="@style/textstyle"
+        android:text="周三"
+        />
+    <TextView
+        android:id="@+id/item_tianqi"
+        android:layout_toRightOf="@id/item_day"
+        style="@style/textstyle"
+        android:text="晴"
+        android:layout_marginLeft="10dp"/>
+    <TextView
+        android:id="@+id/item_fengxiang"
+        android:layout_toLeftOf="@id/item_wendu"
+        style="@style/textstyle"
+        android:text="风向"
+        android:layout_marginLeft="100dp"/>
+    <TextView
+        android:id="@+id/item_wendu"
+        android:layout_alignParentRight="true"
+        style="@style/textstyle"
+        android:text="31~16℃"
+        android:layout_marginLeft="10dp"/>
+
+</RelativeLayout>
